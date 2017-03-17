@@ -1,5 +1,6 @@
 body {
 	background: #59983b url(http://img15.deviantart.net/7771/i/2012/082/9/7/background_room_2_by_blackmoons32-d4tnp77.jpg)
+	
 }
 .main {
 	background: #FBFCFD;
@@ -8,4 +9,5 @@ body {
 		position: relative;
 		align-content: center;
 		margin-top: 100px;
+		
 }
