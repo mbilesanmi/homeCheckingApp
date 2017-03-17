@@ -30,13 +30,13 @@ document.addEventListener("submit", function(event){
     }
     else{
         if(strUser.length === 1 || strUser.length === 1 || strUser.length === 1){
-        	document.getElementById("avail").innerHTML = 'The available ' + str + " room is " + 'room' + obj[x];
+        	document.getElementById("avail").innerHTML = 'The available ' + str + " room is " + 'room ' + obj[x];
           // alert('The available room is ' + "Room" +obj[x]);
         }
         else{
         	var spl = obj[x].split(" "); 
-        	
-        document.getElementById("avail").innerHTML = 'The available ' + str + " rooms are " + 'rooms' + obj[x];
+
+        document.getElementById("avail").innerHTML = 'The available ' + str + " rooms are " + 'rooms ' + obj[x];
            //alert('The available rooms are ' + "Room" +obj[x]);
         }
     }
