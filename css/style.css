@@ -9,5 +9,14 @@ body {
 		position: relative;
 		align-content: center;
 		margin-top: 100px;
-		
+				
+}
+#avail {
+	background-color: white;
+	font-size: 20px;
+	color: black;
+	width: 490px;
+	font-family: cursive;
+	font-weight: bold;
+	margin-top: 20px;
 }
