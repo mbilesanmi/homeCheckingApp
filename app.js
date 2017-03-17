@@ -1,8 +1,11 @@
-function getValue(){
+document.addEventListener("submit", function(event){
+	event.preventDefault();
+	function getValue(){
     var e = document.getElementById("home-list");
     var strUser = e.options[e.selectedIndex].value;
     var obj;
     var x = Math.round((Math.random() * 10));
+    
     if(strUser === 'meeting'){
          obj = {0: 'None', 1: 'A', 2:'B', 3:'C', 4: 'A and B', 5:'A and C', 6: 'B and C', 7:'A, B and C'};
     }
@@ -19,23 +22,32 @@ function getValue(){
         x = 7;
     }
      strUser = obj[x];
-    if(strUser === 'None'){
-        document.getElementById("avail").innerHtml = "There are no available rooms!"
+    if(strUser === 'None') {
+       document.getElementById("avail").innerText = "No rooms are available!";
+       // alert("No Rooms are available");
     }
     else{
-        if(strUser === 'A' || strUser === 'B' || strUser === 'C'){
-        	document.getElementById("avail").innerHtml = "Hello";
-           // alert('The available romm is room ' + obj[x]);
+        if(strUser.length === 1 || strUser.length === 1 || strUser.length === 1){
+        	document.getElementById("avail").innerHTML = 'The available room is ' + "Room " +obj[x];
+          // alert('The available room is ' + "Room" +obj[x]);
         }
         else{
-        	document.getElementById("avail").innerHtml = "Hello";
-           // alert('The available rooms are rooms ' + obj[x]);
+
+        document.getElementById("avail").innerHTML = 'The available rooms are ' + "Room " +obj[x];
+           //alert('The available rooms are ' + "Room" +obj[x]);
         }
     }
 
   //alert(obj[x])
+
+
 };
 
+  //  document.getElementById("demo").innerHTML = "Hello World";
+
+
+getValue();
+});
 
     
 
